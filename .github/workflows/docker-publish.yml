@@ -4,7 +4,7 @@ name: Build and Push Docker Image to GHCR
 on:
   push:
     branches: ["main"] # 当 main 分支有更新时触发
-
+  workflow_dispatch: {} # <--- 加上这行
 jobs:
   build_and_push:
     runs-on: ubuntu-latest
